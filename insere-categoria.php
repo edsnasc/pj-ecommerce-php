@@ -23,7 +23,7 @@ mysqli_close($mysqli);
 $descricao  = $_POST["descricao"];
 $cad_categoria = "SELECT * FROM categoria WHERE descricao = '{$descricao}'";
 $resultado = mysqli_query($mysqli, $cad_categoria);
-$row = mysql_num_rows($resultado);
+$row = mysqli_num_rows($resultado);
   if ($row == 0) {
     $cad_categoria = "INSERT INTO categoria (DESCRICAO) VALUES ('$descricao')";
     echo "<h2>Cadastro realizado com sucesso</h2>";

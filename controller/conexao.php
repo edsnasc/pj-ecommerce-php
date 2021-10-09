@@ -1,9 +1,9 @@
 <?php
   //Conferir os dados abaixo que serão utilizados para a string de conexão com banco de dados
   //Atenação às informações contidas nessas variáveis, pois, caso alguma esteja errada, haverá problema na conexão
-  $user = ''; //Informar o nome de usuário do banco Mysql
-  $pass = ''; // Adicionar senha do usuário do Mysql
-  $server = '';
+  $user = 'root'; //Informar o nome de usuário do banco Mysql
+  $pass = 'pass10654750Ed'; // Adicionar senha do usuário do Mysql
+  $server = 'localhost';
   $db = 'compra'; //Nome do banco que deve ser criado antes do código SQL da base
 
   $mysqli = mysqli_connect($server, $user, $pass, $db);
